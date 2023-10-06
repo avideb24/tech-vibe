@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "Emily Brown",
+      "image": "https://i.ibb.co/Zmb9FvH/111.jpg",
+      "position": "CEO",
+      "company": "Tech Innovate"
+    },
+    {
+      "id": 2,
+      "name": "Alice Johnson",
+      "image": "https://i.ibb.co/N2w6Fzw/2.jpg",
+      "position": "CTO",
+      "company": "CodeCraft"
+    },
+    {
+      "id": 3,
+      "name": "Michael Smith",
+      "image": "https://i.ibb.co/rfS2rwX/3.jpg",
+      "position": "Lead Developer",
+      "company": "InnovaTech"
+    },
+    {
+      "id": 4,
+      "name": "John Doe",
+      "image": "https://i.ibb.co/VDtjprX/1.jpg",
+      "position": "Product Manager",
+      "company": "PixelPerf"
+    }
+  ]
+  

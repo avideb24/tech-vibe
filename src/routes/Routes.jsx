@@ -3,6 +3,8 @@ import Root from '../components/Root';
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
 
 
 const Routes = createBrowserRouter([
@@ -17,13 +19,22 @@ const Routes = createBrowserRouter([
                 loader: () => fetch('/data.json')
             },
             {
+                path: '/about',
+                element: <About></About>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
             {
                 path: '/register',
                 element: <Register></Register>
-            }
+            },
+            
         ]
 
     }
