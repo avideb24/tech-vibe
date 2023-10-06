@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Tech Conferences",
+        "image": "https://i.ibb.co/LJ7F3kq/tech.jpg",
+        "description": "Tech conferences are large-scale events where professionals, researchers, and enthusiasts from the technology industry gather to discuss the latest trends, innovations, and advancements. These conferences feature keynote speakers, panel discussions, workshops, and networking opportunities, providing attendees with valuable insights into the rapidly evolving tech landscape.",
+        "price": "199.99"
+    },
+    {
+        "id": 2,
+        "title": "Hackathons",
+        "image": "https://i.ibb.co/chPjFMY/Hackathons.jpg",
+        "description": " Hackathons are intensive programming events where teams of developers, designers, and engineers collaborate to create innovative software solutions within a limited timeframe, often 24 to 48 hours. Participants brainstorm, code, and prototype their ideas, showcasing their creativity and problem-solving skills. Hackathons foster a competitive yet collaborative environment, encouraging participants to push their boundaries and create cutting-edge projects.",
+        "price": "45.99"
+    },
+    {
+        "id": 3,
+        "title": "Webinars",
+        "image": "https://i.ibb.co/jvJ6j83/Webinars.jpg",
+        "description": "Webinars are online seminars or workshops that allow experts to present tech-related topics to a remote audience. These interactive sessions often include presentations, live demonstrations, Q&A sessions, and polls. Attendees can join from the comfort of their homes or workplaces, making webinars a convenient way to learn about specific technologies, tools, or industry trends without the need for physical attendance.",
+        "price": "139.99"
+    },
+    {
+        "id": 4,
+        "title": "Workshops and Training Sessions",
+        "image": "https://i.ibb.co/KzjH5HP/Workshops-and-Training-Sessions.jpg",
+        "description": " Workshops and training sessions in the tech industry provide hands-on learning experiences. Participants engage in practical exercises, coding sessions, and skill-building activities related to specific software, programming languages, or technologies. These sessions are led by experienced instructors and offer attendees the opportunity to enhance their expertise, ask questions, and collaborate with peers.",
+        "price": "49.99"
+    },
+    {
+        "id": 5,
+        "title": "Product Launch Events",
+        "image": "https://i.ibb.co/bK3mchp/Product-Launch-Events.jpg",
+        "description": "Product launch events are organized by tech companies to introduce and showcase new products or services to the market. These events create excitement around the latest innovations, featuring live demonstrations, presentations by company executives, and hands-on experiences with the new products. Attendees get a firsthand look at cutting-edge technologies and often have the chance to interact with developers and product experts.",
+        "price": "59.99"
+    },
+    {
+        "id": 6,
+        "title": "Networking Events",
+        "image": "https://i.ibb.co/X5yzcqj/Networking-Events.jpg",
+        "description": "Networking events in the tech industry provide professionals with opportunities to meet and connect with peers, potential clients, investors, and collaborators. These events may include casual meetups, industry-specific mixers, or formal business networking sessions. Attendees can exchange ideas, discuss collaborations, and build valuable relationships, fostering a sense of community within the tech ecosystem. Networking events play a crucial role in expanding professional circles and exploring new opportunities within the technology sector.",
+        "price": "99.99"
+    }
+]
