@@ -6,6 +6,8 @@ import Register from "../Pages/Register";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import ServiceDetails from "../Pages/ServiceDetails";
+import Packages from "../Pages/Packages";
+import Speakers from "../Pages/Speakers";
 
 
 const Routes = createBrowserRouter([
@@ -23,6 +25,16 @@ const Routes = createBrowserRouter([
                 path: '/data/:id',
                 element: <ServiceDetails></ServiceDetails>,
                 loader: () => fetch('/data.json')
+            },
+            {
+                path: '/speakers',
+                element: <Speakers></Speakers>,
+                loader: () => fetch('/speaker.json')
+            },
+            {
+                path: '/packages',
+                element: <Packages></Packages>,
+                loader: () => fetch('/packageData.json')
             },
             {
                 path: '/about',

@@ -1,0 +1,42 @@
+[
+    {
+      "packageName": "Silver",
+      "price": "199",
+      "description": "Basic package for tech enthusiasts",
+      "options": [
+        { "label": "Access to all sessions", "active": true },
+        { "label": "Networking opportunities", "active": true },
+        { "label": "Event materials", "active": true },
+        { "label": "Exclusive workshops", "active": false },
+        { "label": "Lunch and refreshments", "active": false },
+        { "label": "Event recording access", "active": false }
+      ]
+    },
+    {
+      "packageName": "Gold",
+      "price": "399",
+      "description": "Enhanced package for tech professionals",
+      "options": [
+        { "label": "Access to all sessions", "active": true },
+        { "label": "Networking opportunities", "active": true },
+        { "label": "Event materials", "active": true },
+        { "label": "Exclusive workshops", "active": true },
+        { "label": "Lunch and refreshments", "active": false },
+        { "label": "Event recording access", "active": false }
+      ]
+    },
+    {
+      "packageName": "Platinum",
+      "price": "599",
+      "description": "Premium package for tech experts",
+      "options": [
+        { "label": "Access to all sessions", "active": true },
+        { "label": "Networking opportunities", "active": true },
+        { "label": "Event materials", "active": true },
+        { "label": "Exclusive workshops", "active": true },
+        { "label": "Lunch and refreshments", "active": true },
+        { "label": "Event recording access", "active": true }
+      ]
+    }
+  ]
+  

@@ -1,25 +1,16 @@
 import { useLoaderData } from "react-router-dom";
-import { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Service from "../components/Service";
-import Speaker from "../components/Speaker";
 import { BsFillFlagFill, BsTelephoneFill } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
+import Sponsors from "../components/Sponsors";
 
 
 const Home = () => {
 
     const services = useLoaderData();
-
-    const [speakers, setSpeakers] = useState([]);
-
-    useEffect(() => {
-        fetch('/speaker.json')
-            .then(res => res.json())
-            .then(data => setSpeakers(data))
-    }, [])
 
     return (
         <div>
@@ -36,21 +27,14 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto py-10">
-                <h2 className="text-center text-3xl font-bold py-10">Meet Our Speakers</h2>
-                <div className="flex justify-around flex-wrap gap-4 bg-[#132151] p-4 rounded-md">
-                    {
-                        speakers.map(speaker => <Speaker key={speaker.id} speaker={speaker}></Speaker>)
-                    }
-                </div>
-            </div>
+           <Sponsors></Sponsors>
 
             <div className="bg-[#132151] p-5 rounded-md my-10">
                 <div className="flex justify-around items-center gap-14 max-w-7xl mx-auto py-10">
                     <div className="space-y-6 max-w-lg">
                         <h4 className="text-lg font-bold">Event Detail</h4>
                         <h2 className="text-5xl font-bold">Conference in the <br /> weekend!</h2>
-                        <p className="text-justify">Join us at TechVibe's exclusive tech events, where innovation meets inspiration. Dive into the latest trends, connect with industry experts, and explore cutting-edge technologies. Experience insightful talks, hands-on workshops, and networking opportunities, all tailored for tech enthusiasts like you. Don't miss the chance to be part of the future – secure your spot now!</p>
+                        <p className="text-justify">Join us at TechVibe&#39;s exclusive tech events, where innovation meets inspiration. Dive into the latest trends, connect with industry experts, and explore cutting-edge technologies. Experience insightful talks, hands-on workshops, and networking opportunities, all tailored for tech enthusiasts like you. Don&#39;t miss the chance to be part of the future - secure your spot now!</p>
                     </div>
                     <div className="space-y-8">
                         <div className="flex gap-4">

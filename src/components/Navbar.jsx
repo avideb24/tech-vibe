@@ -22,6 +22,26 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
+                  to="/speakers"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  }
+                >
+                  Speakers
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/packages"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  }
+                >
+                  Packages
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/about"
                   className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
@@ -57,25 +77,45 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
+              <NavLink
+                to="/speakers"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                }
+              >
+                Speakers
+              </NavLink>
+            </li>
             <li>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
-                  }
-                >
-                  Contact
-                </NavLink>
-              </li>
+              <NavLink
+                to="/packages"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                }
+              >
+                Packages
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                }
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
