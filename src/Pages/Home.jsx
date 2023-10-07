@@ -21,7 +21,7 @@ const Home = () => {
             <div className="max-w-7xl mx-auto py-10">
                 <h2 className="text-center text-3xl text-yellow-500 font-bold pt-10 pb-2">Our Services</h2>
                 <div className='w-32 h-1 mx-auto bg-yellow-500 mb-8'></div>
-                <div className=" grid grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-2 grid-cols-1 mx-5 gap-4">
                     {
                         services.map(service => <Service key={service.id} service={service}></Service>)
                     }
@@ -31,10 +31,10 @@ const Home = () => {
            <Sponsors></Sponsors>
 
             <div className="bg-[#132151] p-5 my-10">
-                <div className="flex justify-around items-center gap-14 max-w-7xl mx-auto py-10">
+                <div className="flex lg:flex-row flex-col justify-around items-center gap-14 max-w-7xl mx-auto py-10">
                     <div className="space-y-6 max-w-lg">
                         <h4 className="text-lg font-bold rounded-tr-full bg-yellow-500 inline-block pl-3 text-[#132151] pr-6 py-2">Event Detail</h4>
-                        <h2 className="text-5xl text-yellow-500 font-bold border-l-8 pl-4 py-2 border-l-yellow-500">Conference in the <br /> weekend!</h2>
+                        <h2 className="sm:text-5xl text-3xl text-yellow-500 font-bold border-l-8 pl-4 py-2 border-l-yellow-500">Conference in the <br /> weekend!</h2>
                         <p className="text-justify">Join us at TechVibe&#39;s exclusive tech events, where innovation meets inspiration. Dive into the latest trends, connect with industry experts, and explore cutting-edge technologies. Experience insightful talks, hands-on workshops, and networking opportunities, all tailored for tech enthusiasts like you. Don&#39;t miss the chance to be part of the future - secure your spot now!</p>
                     </div>
                     <div className="space-y-8">

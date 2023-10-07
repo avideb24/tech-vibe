@@ -7,7 +7,6 @@ export const AuthContext = createContext(null);
 
 const AuthProvider = ({children}) => {
 
-    const [photoURL, setPhotoURL] = useState('');
 
     const [user, setUser] = useState(null);
 

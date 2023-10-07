@@ -9,6 +9,7 @@ import ServiceDetails from "../Pages/ServiceDetails";
 import Packages from "../Pages/Packages";
 import Speakers from "../Pages/Speakers";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage";
 
 
 const Routes = createBrowserRouter([
@@ -16,6 +17,7 @@ const Routes = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -52,7 +54,7 @@ const Routes = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            },
+            }
             
         ]
 
