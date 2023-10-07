@@ -5,8 +5,11 @@ import { auth } from "./firebase.config";
 
 export const AuthContext = createContext(null);
 
-const AuthProvider = ({children}) => {
+const AuthProvider = ({ children }) => {
 
+    const [userName, setUserName] = useState('');
+
+    const [userPhoto, setUserPhoto] = useState('');
 
     const [user, setUser] = useState(null);
 
@@ -20,7 +23,7 @@ const AuthProvider = ({children}) => {
         return () => {
             unSubscribe()
         }
-    },[])
+    }, [])
 
     const createUser = (email, password) => {
         setLoading(true);
@@ -42,7 +45,7 @@ const AuthProvider = ({children}) => {
         return signInWithPopup(auth, provider);
     }
 
-    const authInfo = {user, loading, createUser, signInUser, signOutUser, googleSignIn}
+    const authInfo = { user, loading, userName, userPhoto, setUserPhoto, setUserName, createUser, signInUser, signOutUser, googleSignIn }
 
     return (
         <AuthContext.Provider value={authInfo}>
