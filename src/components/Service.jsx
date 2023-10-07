@@ -15,7 +15,7 @@ const Service = ({ service }) => {
                     <p>{description}</p>
             }
             <p>${price}</p>
-            <Link to={`/data/${id}`}><button className='px-4 py-1 bg-[#108aee] text-white rounded-md inline-block mt-4'>View Details</button></Link>
+            <Link to={`/data/${id}`}><button className='px-4 py-1 bg-yellow-500 text-[#08133a] rounded-md inline-block mt-4'>View Details</button></Link>
         </div>
     );
 };

@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#08133a] text-white">
+    <div className="bg-[#08133a] text-white px-6">
       <div className="navbar max-w-7xl mx-auto px-0">
         <div className="navbar-start">
           <div className="dropdown">
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <NavLink
                   to="/"
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                    isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                   }
                 >
                   Home
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink
                   to="/speakers"
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                    isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                   }
                 >
                   Speakers
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <NavLink
                   to="/packages"
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                    isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                   }
                 >
                   Packages
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <NavLink
                   to="/about"
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                    isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                   }
                 >
                   About
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <NavLink
                   to="/contact"
                   className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                    isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                   }
                 >
                   Contact
@@ -62,7 +62,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-2xl italic">TechVibe</a>
+          <a className="text-2xl font-bold italic flex">Tech<span className="text-yellow-500">Vibe</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -70,7 +70,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                 }
               >
                 Home
@@ -80,7 +80,7 @@ const Navbar = () => {
               <NavLink
                 to="/speakers"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                 }
               >
                 Speakers
@@ -90,7 +90,7 @@ const Navbar = () => {
               <NavLink
                 to="/packages"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                 }
               >
                 Packages
@@ -100,7 +100,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                 }
               >
                 About
@@ -110,7 +110,7 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-[#108aee] font-bold underline" : ""
+                  isPending ? "pending" : isActive ? "text-yellow-500 font-bold underline" : ""
                 }
               >
                 Contact
@@ -119,7 +119,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className="bg-[#108aee] px-4 py-1 rounded-md" to='/login'>Login</Link>
+          <Link className="bg-yellow-500 text-[#08133a] font-bold px-4 py-1 rounded-md" to='/login'>Login</Link>
         </div>
       </div>
     </div>

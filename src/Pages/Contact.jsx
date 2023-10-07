@@ -6,7 +6,7 @@ const Contact = () => {
         <div className="#08133a max-w-7xl mx-auto px-6">
             <Navbar></Navbar>
             <div className="text-center space-y-3 py-10">
-                <h2 className="text-5xl font-bold mb-8">Contact Us</h2>
+                <h2 className="text-5xl text-yellow-500 font-bold mb-8">Contact Us</h2>
                 <p>If you have any questions, suggestions, or partnership inquiries, feel free to contact us using the information below:</p>
                 <div className="contact-details">
                     <p><strong>Email:</strong> info@techvibe.com</p>

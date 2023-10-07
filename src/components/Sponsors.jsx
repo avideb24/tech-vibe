@@ -10,7 +10,8 @@ import Sponsor8 from '../images/sponsor (8).png';
 const Sponsors = () => {
     return (
         <div className='max-w-7xl mx-auto py-10'>
-            <h2 className="text-center text-3xl font-bold py-10">Our Sponsors</h2>
+            <h2 className="text-center text-3xl text-yellow-500 font-bold pt-10 pb-2">Our Sponsors</h2>
+            <div className='w-32 h-1 mx-auto bg-yellow-500 mb-8'></div>
             <div className='flex justify-center flex-wrap gap-x-20 gap-y-10'>
                 <img className='w-40 object-contain' src={Sponsor1} alt="" />
                 <img className='w-40 object-contain' src={Sponsor2} alt="" />

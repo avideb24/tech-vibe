@@ -12,7 +12,7 @@ const Packages = () => {
             <Navbar></Navbar>
             <div className="space-y-4 py-10">
                 <h3 className="text-xl font-bold">Pricing Packages</h3>
-                <h2 className="text-4xl text-yellow-500 font-bold border-l-8 pl-4 py-2 border-l-[#108aee]">Get Your Tickets Now!</h2>
+                <h2 className="text-4xl text-yellow-500 font-bold border-l-8 pl-4 py-2 border-l-yellow-500">Get Your Tickets Now!</h2>
                 <div className="flex justify-around flex-wrap">
                     {
                         packages.map((item, idx) => <Package key={idx} pack={item}></Package>)

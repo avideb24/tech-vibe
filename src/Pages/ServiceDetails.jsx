@@ -14,7 +14,7 @@ const ServiceDetails = () => {
             <Navbar></Navbar>
             <div className="p-4 rounded-md my-10 bg-[#172557d2] space-y-3">
                 <img className="w-full rounded-md" src={serviceData.image} alt="" />
-                <h2 className='text-2xl font-bold'>{serviceData.title}</h2>
+                <h2 className='text-2xl text-yellow-500 font-bold'>{serviceData.title}</h2>
                 <p>{serviceData.description}</p>
                 <p className="text-xl">${serviceData.price}</p>
             </div>
