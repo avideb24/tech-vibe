@@ -6,7 +6,7 @@ const Contact = () => {
         <div className="#08133a max-w-7xl mx-auto px-6">
             <Navbar></Navbar>
             <div className="text-center space-y-3 py-10">
-                <h2 className="text-center text-3xl text-yellow-500 font-bold pb-2">Contact Us</h2>
+                <h2 className="text-center text-3xl text-yellow-500 font-bold pb-2">Contact</h2>
                 <div className='w-32 h-1 mx-auto bg-yellow-500 mb-12'></div>
                 <p className="pt-5">If you have any questions, suggestions, or partnership inquiries, feel free to contact us using the information below:</p>
                 <div className="contact-details">

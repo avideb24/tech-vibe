@@ -1,6 +1,26 @@
-import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
+  const { user, signOutUser } = useContext(AuthContext);
+
+  console.log(user);
+
+  const handleSignOut = () => {
+    signOutUser()
+      .then(res => {
+        console.log(res);
+        navigate('/')
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }
+
   return (
     <div className="bg-[#08133a] text-white px-6">
       <div className="navbar max-w-7xl mx-auto px-0">
@@ -119,7 +139,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className="bg-yellow-500 text-[#08133a] font-bold px-4 py-1 rounded-md" to='/login'>Login</Link>
+          {
+            user ?
+              <div>
+                <Link onClick={handleSignOut} className="bg-yellow-500 text-[#08133a] font-bold px-4 py-1 rounded-md" to='/'>Log Out</Link>
+              </div>
+              :
+              <Link className="bg-yellow-500 text-[#08133a] font-bold px-4 py-1 rounded-md" to='/login'>Login</Link>
+          }
         </div>
       </div>
     </div>

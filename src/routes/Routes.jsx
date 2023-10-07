@@ -8,6 +8,7 @@ import Contact from "../Pages/Contact";
 import ServiceDetails from "../Pages/ServiceDetails";
 import Packages from "../Pages/Packages";
 import Speakers from "../Pages/Speakers";
+import PrivateRoute from "./PrivateRoute";
 
 
 const Routes = createBrowserRouter([
@@ -23,17 +24,17 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/data/:id',
-                element: <ServiceDetails></ServiceDetails>,
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
                 loader: () => fetch('/data.json')
             },
             {
                 path: '/speakers',
-                element: <Speakers></Speakers>,
+                element: <PrivateRoute><Speakers></Speakers></PrivateRoute>,
                 loader: () => fetch('/speaker.json')
             },
             {
                 path: '/packages',
-                element: <Packages></Packages>,
+                element: <PrivateRoute> <Packages></Packages></PrivateRoute>,
                 loader: () => fetch('/packageData.json')
             },
             {
