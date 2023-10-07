@@ -11,7 +11,7 @@ const Packages = () => {
         <div className="max-w-7xl mx-auto">
             <Navbar></Navbar>
             <div className="space-y-4 py-10">
-                <h3 className="text-xl font-bold">Pricing Packages</h3>
+            <h4 className="text-lg font-bold rounded-tr-full bg-yellow-500 inline-block pl-3 text-[#132151] pr-6 py-2">Pricing Packages</h4>
                 <h2 className="text-4xl text-yellow-500 font-bold border-l-8 pl-4 py-2 border-l-yellow-500">Get Your Tickets Now!</h2>
                 <div className="flex justify-around flex-wrap">
                     {

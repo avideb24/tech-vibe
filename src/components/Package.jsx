@@ -13,7 +13,7 @@ const Package = ({ pack }) => {
 
     return (
         <div className='text-center w-80 p-8 bg-[#091f4c] rounded-md mt-10 space-y-4 flex flex-col justify-between'>
-            <h3 className='text-xl text-[#08133a] font-bold p-4 rounded-tl-full bg-yellow-500'>{packageName}</h3>
+            <h3 className='text-xl text-[#08133a] font-bold p-4 rounded-tl-full rounded-br-full bg-yellow-500'>{packageName}</h3>
             <h2 className='text-5xl text-yellow-500 font-bold'>${price}</h2>
             <p className='text-sm pb-2'>{description}</p>
             <div className='w-20 h-2 mx-auto bg-yellow-500'></div>
