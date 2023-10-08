@@ -6,17 +6,34 @@ import Service from "../components/Service";
 import { BsFillFlagFill, BsTelephoneFill } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
 import Sponsors from "../components/Sponsors";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useContext, useEffect } from "react";
+import { Helmet } from "react-helmet";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Home = () => {
+
+    const { user } = useContext(AuthContext);
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     const services = useLoaderData();
 
     return (
         <div>
-            <Navbar></Navbar>
+            {
+                user &&
+                <Helmet>
+                    <title>Home</title>
+                </Helmet>
+            }
+            <div data-aos="fade-up" data-aos-duration="1500"><Navbar></Navbar></div>
 
-            <Banner></Banner>
+            <div data-aos="fade-up" data-aos-duration="1500"><Banner></Banner></div>
 
             <div className="max-w-7xl mx-auto py-10">
                 <h2 className="text-center text-3xl text-yellow-500 font-bold pt-10 pb-2">Our Services</h2>
@@ -28,16 +45,16 @@ const Home = () => {
                 </div>
             </div>
 
-           <Sponsors></Sponsors>
+            <div data-aos="fade-up" data-aos-duration="1500"><Sponsors></Sponsors></div>
 
             <div className="bg-[#132151] p-5 my-10">
                 <div className="flex lg:flex-row flex-col justify-around items-center gap-14 max-w-7xl mx-auto py-10">
-                    <div className="space-y-6 max-w-lg">
+                    <div className="space-y-6 max-w-lg" data-aos="zoom-in" data-aos-duration="1500">
                         <h4 className="text-lg font-bold rounded-tr-full bg-yellow-500 inline-block pl-3 text-[#132151] pr-6 py-2">Event Detail</h4>
                         <h2 className="sm:text-5xl text-3xl text-yellow-500 font-bold border-l-8 pl-4 py-2 border-l-yellow-500">Conference in the <br /> weekend!</h2>
                         <p className="text-justify">Join us at TechVibe&#39;s exclusive tech events, where innovation meets inspiration. Dive into the latest trends, connect with industry experts, and explore cutting-edge technologies. Experience insightful talks, hands-on workshops, and networking opportunities, all tailored for tech enthusiasts like you. Don&#39;t miss the chance to be part of the future - secure your spot now!</p>
                     </div>
-                    <div className="space-y-8">
+                    <div className="space-y-8" data-aos="zoom-in" data-aos-duration="1500">
                         <div className="flex gap-4">
                             <div className="text-4xl text-yellow-500 mt-2"><BsFillFlagFill></BsFillFlagFill></div>
                             <div>
@@ -63,7 +80,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <Footer></Footer>
+            <div data-aos="zoom-in" data-aos-duration="1500"><Footer></Footer></div>
 
         </div>
     );

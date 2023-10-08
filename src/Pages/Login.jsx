@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AiOutlineGoogle } from "react-icons/ai";
 import { AuthContext } from "../Provider/AuthProvider";
 import { GoogleAuthProvider } from "firebase/auth";
 import Navbar from "../components/Navbar";
+import googleIcon from "../images/google.png";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
 
@@ -54,6 +55,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="py-10 px-5">
                 <div className="max-w-xl mx-auto bg-[#132151] p-10 rounded-md text-white">
@@ -67,11 +71,9 @@ const Login = () => {
                     <div className="mt-8">
                         <button
                             onClick={handleGoogleSignIn}
-                            className="w-full bg-transparent rounded-md py-2 flex justify-center items-center gap-1 bg-blue-900 text-white"
+                            className="w-full bg-transparent rounded-md py-1 flex justify-center items-center gap-1 bg-blue-600 text-white"
                         >
-                            <span className="text-lg">
-                                <AiOutlineGoogle></AiOutlineGoogle>
-                            </span>{" "}
+                            <img className="w-8" src={googleIcon} alt="" />
                             Login With Google
                         </button>
                     </div>

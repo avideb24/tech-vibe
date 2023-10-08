@@ -140,8 +140,8 @@ const Navbar = () => {
           {
             user ?
               <div className="flex items-center gap-3">
-                <p className="text-yellow-500">{userName}</p>
-                <div><img className="w-8 h-8 object-cover rounded-full" src={userPhoto} alt="" /></div>
+                {userName && <p className="text-yellow-500">{userName}</p>}
+                <div>{userPhoto && <img className="w-8 h-8 object-cover rounded-full" src={userPhoto} alt="" />}</div>
                 <Link onClick={handleSignOut} className="bg-yellow-500 text-[#08133a] font-bold px-4 py-1 rounded-md" to='/'>Log Out</Link>
               </div>
               :

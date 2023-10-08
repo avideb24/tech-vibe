@@ -1,11 +1,15 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import Navbar from "../components/Navbar";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const { createUser, setUserName, setUserPhoto } = useContext(AuthContext);
 
@@ -59,6 +63,7 @@ const Register = () => {
                     icon: 'success',
                     text: 'User Created Successfully!',
                 })
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error)
@@ -67,6 +72,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="py-10 px-5">
                 <div className=" max-w-xl mx-auto bg-[#132151]  p-10 rounded-md text-white">

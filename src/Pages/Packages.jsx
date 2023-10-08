@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Package from "../components/Package";
+import { Helmet } from "react-helmet";
 
 const Packages = () => {
 
@@ -9,6 +10,9 @@ const Packages = () => {
 
     return (
         <div className="max-w-7xl mx-auto">
+            <Helmet>
+                <title>Packages</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="mx-5">
                 <div className="space-y-4 py-10">

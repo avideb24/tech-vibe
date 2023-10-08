@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Contact = () => {
     return (
         <div className="#08133a max-w-7xl mx-auto px-6">
+            <Helmet>
+                <title>Contact</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="text-center space-y-3 py-10">
                 <h2 className="text-center text-3xl text-yellow-500 font-bold pb-2">Contact</h2>
