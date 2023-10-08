@@ -124,7 +124,7 @@ console.log(count);
 
 #### Answer: C: 3
 
-<i>Explanation: We have looping the nums array. Inside the loop, we set a condition to check the num value "Truthy". if it's truthy, the count variable will increase to +1. 0 is a falsy value, but the others are truthy. So the answer is "3".</i>
+<i>Explanation: We are looping the nums array. Inside the loop, we set a condition to check the num value "Truthy". if it's truthy, the count variable will increase to +1. 0 is a falsy value, but the others are truthy. So the answer is "3".</i>
 
 </p>
 </details>
