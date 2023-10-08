@@ -26,10 +26,13 @@ const Home = () => {
     return (
         <div>
             {
-                user &&
+                user ?
                 <Helmet>
                     <title>Home</title>
-                </Helmet>
+                </Helmet> :
+                <Helmet>
+                <title>TechVibe</title>
+            </Helmet>
             }
             <div data-aos="fade-up" data-aos-duration="1500"><Navbar></Navbar></div>
 

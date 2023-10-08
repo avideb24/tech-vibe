@@ -30,6 +30,10 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/')
             })
             .catch(err => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Login Credentials!',
+                })
                 console.error(err)
             })
     }
@@ -47,9 +51,11 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                console.error( 'firebase main error',error)
-                console.error("Firebase Error Code:", error.code);
-                console.error("Firebase Error Message:", error.message);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Login Credentials!',
+                })
+                console.error(error)
             })
     }
 
@@ -71,7 +77,7 @@ const Login = () => {
                     <div className="mt-8">
                         <button
                             onClick={handleGoogleSignIn}
-                            className="w-full bg-transparent rounded-md py-1 flex justify-center items-center gap-1 bg-blue-600 text-white"
+                            className="w-full bg-blue-600 rounded-md py-1 flex justify-center items-center gap-1  text-white"
                         >
                             <img className="w-8" src={googleIcon} alt="" />
                             Login With Google

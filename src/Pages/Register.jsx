@@ -31,15 +31,7 @@ const Register = () => {
 
         const email = e.target.email.value;
         const password = e.target.password.value;
-
-
-        if (password.length <= 6) {
-            Swal.fire({
-                icon: 'error',
-                text: 'Password Must Be 6 Character Longer',
-            })
-            return
-        }
+    
         if (!/[A-Z]/.test(password)) {
             Swal.fire({
                 icon: 'error',
@@ -55,6 +47,13 @@ const Register = () => {
             })
             return
         }
+        if (password.length <= 6) {
+            Swal.fire({
+                icon: 'error',
+                text: 'Password Must Be 6 Character Longer',
+            })
+            return
+        }
 
         createUser(email, password)
             .then(res => {
@@ -66,6 +65,10 @@ const Register = () => {
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Registration Credentials!',
+                })
                 console.error(error)
             })
     }
