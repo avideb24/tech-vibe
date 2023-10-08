@@ -1,8 +1,13 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>TechVibe</h1>
+<br>
+<h3>Features & Functionalities:</h3>
+<ul>
+    <li>You can join our events to grow up yourself with lots learning.</li>
+    <li>Here we have 6 different categories about tech events. You can choose the right one for you.</li>
+    <li>We have a package pricing system for those who wants to attend multiple events.</li>
+    <li>If you want to see the speakers and our packages, you must login in first.</li>
+    <li>You can see the sponsors we have and the event vanue on homepage.</li>
+    <li>If you need more information about us, you can visit About and Contact page.</li>
+</ul>
+<br> <br>
+<h5>Thank You!</h5>
