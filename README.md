@@ -9,5 +9,7 @@
     <li>You can see the sponsors we have and the event vanue on homepage.</li>
     <li>If you need more information about us, you can visit About and Contact page.</li>
 </ul>
+
+live link: https://tech-vibe.web.app/
 <br> <br>
 <h5>Thank You!</h5>
