@@ -8,6 +8,7 @@ const About = () => {
             <Helmet>
                 <title>About</title>
             </Helmet>
+            {/* header */}
            <Navbar></Navbar>
             <div>
                 <div className="text-center space-y-3 py-10">
